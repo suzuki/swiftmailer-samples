@@ -1,0 +1,18 @@
+{
+    "name": "suzuki/swiftmailer-samples",
+    "type": "sample-code",
+    "license": "MIT",
+    "authors": [
+	{
+	    "name": "Norio Suzuki",
+	    "email": "norio.suzuki@gmail.com"
+	}
+    ],
+    "require": {
+	"swiftmailer/swiftmailer": "dev-master",
+	"jmhobbs/swiftmailer-transport-aws-ses": "dev-master",
+	"openbuildings/swiftmailer-filter": "dev-master",
+	"openbuildings/swiftmailer-css-inliner": "dev-master",
+	"openbuildings/swiftmailer-google-campaign": "dev-master"
+    }
+}

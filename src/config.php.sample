@@ -1,0 +1,50 @@
+<?php
+/**
+ * Configuration for Swift Mailer Samples
+ *
+ * Replace the values of your own.
+ */
+
+// Basic setup
+define('MAIL_TO',   'user1@example.com');
+define('MAIL_FROM', 'sender@example.com');
+define('SMTP_HOST', 'localhost');
+define('SMTP_PORT', 25);
+
+// Another recipients
+define('MAIL_TO2',  'user2@example.com');
+define('MAIL_TO3',  'user3@example.com');
+
+// SMTP Auth
+define('SMTP_AUTH_HOST', 'smtpauth.example.com');
+define('SMTP_AUTH_PORT', 465);
+define('SMTP_AUTH_USER', 'user@example.com');
+define('SMTP_AUTH_PASS', 'SmtpAuthPassword');
+
+// using FailoverTransport, LoadbalancedTransport
+define('SMTP_HOST2', 'localhost');
+define('SMTP_PORT2', 25);
+
+// S/MIME
+define('SMIME_CERT_FILE',   './certs/cert.pem');
+define('SMIME_SECRET_FILE', './certs/secret.pem');
+define('SMIME_SECRET_PASSPHRASE', 'PassPhrase');
+
+// DKIM
+define('DKIM_PRIVATE_KEY', './certs/default.private');
+define('DKIM_DOMAIN', 'example.com');
+define('DKIM_SELECTOR', 'default');
+
+// FileSpoolPlugin
+define('FILE_SPOOL_PATH', './spool');
+
+// Other Plugins
+define('MAIL_SENDER', 'sender@example.com');
+define('MAIL_REDIRECT_TO', 'redirect@example.com');
+define('WHITE_LIST_PCRE_PATTERN', '/^user1\+/');
+define('MAIL_FAILED_ADDRESS', 'nouser@example.com');
+
+// Amazon SES
+define('AWS_ACCESS_KEY', 'YOUR_SES_ACCESS_KEY');
+define('AWS_SECRET_KEY', 'YOUR_SES_SECRET_KEY');
+define('AWS_ENDPOINT', 'YOUR_SES_ENDPOINT_URL');
